@@ -5,7 +5,7 @@
 }
 
 html {
-  background: 
+  background:
     url(assets/LICONSA.png) no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -14,6 +14,7 @@ html {
   /* background: linear-gradient(to right, #47001c, #971132); */
   /* background-color: #828282; */
 }
+
 body {
   margin: auto;
   font-family: Arial;
@@ -22,7 +23,7 @@ body {
 }
 
 #menu {
-  background:linear-gradient(to right, #020203, #0b231e);
+  background: linear-gradient(to right, #020203, #0b231e);
   width: 100%;
   height: 118px;
   background-attachment: fixed;
@@ -67,6 +68,7 @@ a {
   position: fixed;
   width: 100%;
 }
+
 /* centrar */
 #menus ul {
   list-style: none;
@@ -124,7 +126,7 @@ a {
 }
 
 /* efecto al pasar el cursor */
-#menus ul li:hover > ul {
+#menus ul li:hover>ul {
   display: block;
   text-align: center;
   transition: 0.5s;
@@ -180,7 +182,7 @@ a {
     color: #bc955c;
   }
 
-  #check:checked ~ ul {
+  #check:checked~ul {
     left: 0;
   }
 }
@@ -292,7 +294,7 @@ a {
   }
 }
 
-input {
+.l {
   padding: 10px;
   width: 100px;
   border-radius: 10px;
@@ -310,8 +312,8 @@ input {
 }
 
 footer {
-  background:linear-gradient(to right, #020203, #0b231e);
-  position: absolute;
+  background: linear-gradient(to right, #020203, #0b231e);
+  position: static;
   bottom: auto;
   width: 100%;
   height: auto;
@@ -360,8 +362,9 @@ footer {
   top: 10px;
   margin: 5px;
 }
+
 .timeline-content {
-  background: linear-gradient( #000000 10%, #777777);
+  background: linear-gradient(#000000 10%, #777777);
   box-shadow: 0 0 20px 1px black;
   padding: 30px;
   border-radius: 5px;
@@ -417,13 +420,13 @@ footer {
 .zoom:hover {
   transform: scale(2.0);
 }
+
 /* contactos */
 .content-table {
   border-collapse: collapse;
   margin: 25px 0;
   font-size: 0.9em;
   width: 100%;
-  height: auto;
   border-radius: 5px 5px 0 0;
   overflow: hidden;
   background: #0b231e;
@@ -440,7 +443,7 @@ footer {
 
 .content-table th,
 .content-table td {
-  padding: 12px 15px;
+  padding: 10px 10px;
 }
 
 .content-table tbody tr {
@@ -459,14 +462,95 @@ footer {
   font-weight: bold;
   color: #ffffff;
 }
+
 /* responsive */
-@media (max-width: 900px) {
-  .content-table::before {
-    right: 60px;
+@media screen and (max-width: 600px) {
+  table {
+    width: 100%;
   }
 
+  thead {
+    display: none;
+  }
+
+  tr td:first-child {
+    background: #bc955c;
+    font-weight: bold;
+    font-size: 1.5em;
+  }
+
+  tbody td {
+    display: block;
+    text-align: center;
+  }
+
+  tbody td:before {
+    content: attr(data-th);
+    display: block;
+    text-align: center;
+  }
 }
-h1{
-  text-align: center; color: #ffffff;
+
+h1 {
+  text-align: center;
+  color: #ffffff;
 }
+
 /* fin de contactos */
+/* inicio de estilo busqueda */
+.box {
+  margin: 50px auto;
+  width: 300px;
+  height: 10px;
+}
+
+.container-1 {
+  width: 300px;
+  vertical-align: middle;
+  white-space: nowrap;
+  position: static;
+}
+
+.container-1 input#buscador {
+  width: 300px;
+  height: 50px;
+  background: #2b303b;
+  border: none;
+  font-size: 13pt;
+  float: left;
+  color: #000000;
+  padding-left: 45px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
+
+.container-1 input#buscador::-webkit-input-placeholder {
+  color: black;
+}
+
+.container-1 input#buscador:-moz-placeholder {
+  /* Firefox 18- */
+  color: black;
+}
+
+.container-1 input#buscador::-moz-placeholder {
+  /* Firefox 19+ */
+  color: black;
+}
+
+.container-1 input#buscador:-ms-input-placeholder {
+  color: black;
+}
+.container-1 input#buscador:hover,
+.container-1 input#buscador:focus,
+.container-1 input#buscador:active {
+  outline: none;
+  background: #ffffff;
+}
+.filtro {
+  display: none;
+}
+.filtro1{
+  display: none;
+}
