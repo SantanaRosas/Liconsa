@@ -645,27 +645,27 @@ h1 {
 
 
 .acc-item:nth-child(1) {
-  background-image: url("/assets/imagenesslider/wqe.jpg");
+  background-image: url("assets/imagenesslider/wqe.jpg");
 }
 
 .acc-item:nth-child(2) {
-  background-image: url("/assets/imagenesslider/fg.jpg");
+  background-image: url("assets/imagenesslider/fg.jpg");
 }
 .acc-item:nth-child(3) {
-  background-image: url("/assets/imagenesslider/librewolf_IHr2dicEM3.png");
+  background-image: url("assets/imagenesslider/librewolf_IHr2dicEM3.png");
 }
 .acc-item:nth-child(4) {
-  background-image: url("/assets/imagenesslider/12.jpg");
+  background-image: url("assets/imagenesslider/12.jpg");
 }
 .acc-item:nth-child(5) {
-  background-image: url("/assets/imagenesslider/10.jpg");
+  background-image: url("assets/imagenesslider/10.jpg");
 }
 
 .acc-item:nth-child(6) {
-  background-image: url("/assets/imgcontenido/leche.jpg");
+  background-image: url("assets/imgcontenido/leche.jpg");
 }
 .acc-item:nth-child(7) {
-  background-image: url("/assets/imgcontenido/historia.jpg");
+  background-image: url("assets/imgcontenido/historia.jpg");
 }
 .acc-item:nth-child(8){
   background-image: url("https://unsplash.it/1500/1000?random");
