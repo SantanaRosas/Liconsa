@@ -606,7 +606,6 @@ h1 {
 .acc-item:hover {
   height: 600px;
   width: 100%;
-  border-radius: 2%;
 }
 
 .acc-item:hover:after {
